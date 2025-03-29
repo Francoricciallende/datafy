@@ -40,15 +40,22 @@
 
     <section class="contact" id="contacto">
       <h3>Contacto</h3>
-      <form action="mailto:info@datafy.lat" method="post" enctype="text/plain">
-        <input type="text" name="nombre" placeholder="Nombre completo" required />
-        <input type="email" name="email" placeholder="Correo electrónico" required />
-        <input type="text" name="telefono" placeholder="Teléfono de contacto" />
-        <input type="text" name="provincia" placeholder="Provincia" />
-        <input type="text" name="pais" placeholder="País" />
-        <textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
+    <form action="https://formsubmit.co/info@datafy.lat" method="POST">
+      <input type="text" name="nombre" placeholder="Nombre" required>
+      <input type="email" name="email" placeholder="Correo electrónico" required>
+      <input type="text" name="telefono" placeholder="Teléfono">
+      <input type="text" name="provincia" placeholder="Provincia">
+      <input type="text" name="pais" placeholder="País">
+      <textarea name="mensaje" placeholder="Escribí tu mensaje..." rows="5" required></textarea>
+
+      <!-- Campos ocultos para redirección y anti-spam -->
+      <input type="hidden" name="_next" value="https://datafy.lat/gracias.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <button type="submit">Enviar</button>
+    </form>
+
+      
     </section>
   </main>
 
