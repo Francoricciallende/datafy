@@ -1,48 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Datafy - Consultoría en Datos</title>
+  <title>Datafy - Consultoría en Datos e Inteligencia de Negocios</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header>
     <div class="logo">
-      <img src="img/LOGO_DATAFY_1.jpg" alt="Datafy Logo">
+      <img src="img/LOGO_DATAFY_1.jpg" alt="Logo de Datafy" />
       <h1>Datafy</h1>
     </div>
-    <button class="language-toggle" onclick="toggleLanguage()">English</button>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#home">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#solutions">Soluciones</a>
+          <ul class="dropdown-content">
+            <li><a href="#analytics">Analítica</a></li>
+            <li><a href="#advertising">Publicidad</a></li>
+          </ul>
+        </li>
+        <li><a href="#pricing">Precios</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+    <div>
+      <a href="index-en.html" class="language-toggle">English</a>
+    </div>
   </header>
 
   <main>
-    <section class="report">
-      <h2>Reporte de Ejemplo</h2>
-      <iframe title="Curso Compilado PBI" src="https://app.powerbi.com/view?r=eyJrIjoiZDYxZjFlNDUtZDVlOS00ZDY5LWE2ZTUtYjAzMDZjNzNkOGIwIiwidCI6IjAzZmMzOGQ5LTkzMWYtNDk1Yi04MGJhLWQxNGM1ZDVkMWYxZCIsImMiOjR9" allowfullscreen></iframe>
+    <section id="home" class="intro">
+      <h2>Bienvenido a Datafy</h2>
+      <p>Ofrecemos servicios profesionales de consultoría en análisis de datos e inteligencia de negocios. Nuestro objetivo es ayudarte a transformar datos en decisiones estratégicas para hacer crecer tu negocio.</p>
     </section>
 
-    <section class="contact">
+    <section id="analytics" class="report">
+      <h2>Ejemplo de Reporte en Power BI</h2>
+      <iframe title="Curso Compilado PBI" src="https://app.powerbi.com/view?r=eyJrIjoiZDYxZjFlNDUtZDVlOS00ZDY5LWE2ZTUtYjAzMDZjNzNkOGIwIiwidCI6IjAzZmMzOGQ5LTkzMWYtNDk1Yi04MGJhLWQxNGM1ZDVkMWYxZCIsImMiOjR9" allowFullScreen="true"></iframe>
+    </section>
+
+    <section id="contact" class="contact">
       <h2>Contacto</h2>
-      <form action="mailto:info@datafy.lat" method="post" enctype="text/plain">
-        <input type="text" name="nombre" placeholder="Nombre" required />
+      <form action="https://formspree.io/f/mzbqlnnv" method="POST">
+        <input type="text" name="name" placeholder="Nombre" required />
         <input type="email" name="email" placeholder="Correo electrónico" required />
-        <input type="text" name="telefono" placeholder="Teléfono de contacto" />
-        <input type="text" name="provincia" placeholder="Provincia" />
-        <input type="text" name="pais" placeholder="País" />
-        <textarea name="mensaje" placeholder="Escriba su mensaje aquí..." required></textarea>
-        <button type="submit">Enviar mensaje</button>
+        <input type="text" name="phone" placeholder="Teléfono" />
+        <input type="text" name="province" placeholder="Provincia" />
+        <input type="text" name="country" placeholder="País" />
+        <textarea name="message" placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
       </form>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 Datafy. Todos los derechos reservados.
+    <p>Contacto: <a href="mailto:info@datafy.lat">info@datafy.lat</a></p>
+    <p>&copy; 2025 Datafy. Todos los derechos reservados.</p>
   </footer>
-
-  <script>
-    function toggleLanguage() {
-      window.location.href = "en/index.html";
-    }
-  </script>
 </body>
+
 </html>
