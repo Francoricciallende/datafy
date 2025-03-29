@@ -14,25 +14,39 @@
       <img src="img/LOGO_DATAFY_1.jpg" alt="Datafy logo" />
       <h1>Datafy</h1>
     </div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li class="dropdown">
+          <a href="#solutions">Solutions</a>
+          <ul class="dropdown-content">
+            <li><a href="#analytics">Analytics</a></li>
+            <li><a href="#advertising">Advertising</a></li>
+          </ul>
+        </li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
     <div>
       <a href="index.html" class="language-toggle">Español</a>
     </div>
   </header>
 
   <main>
-    <section class="intro">
+    <section id="home" class="intro">
       <h2>Welcome to Datafy</h2>
       <p>We offer professional consulting services in data analysis and business intelligence. Our goal is to help you transform data into actionable insights that drive your business forward.</p>
     </section>
 
-    <section class="report">
+    <section id="analytics" class="report">
       <h2>Sample Power BI Report</h2>
       <iframe title="Curso Compilado PBI" src="https://app.powerbi.com/view?r=eyJrIjoiZDYxZjFlNDUtZDVlOS00ZDY5LWE2ZTUtYjAzMDZjNzNkOGIwIiwidCI6IjAzZmMzOGQ5LTkzMWYtNDk1Yi04MGJhLWQxNGM1ZDVkMWYxZCIsImMiOjR9" allowFullScreen="true"></iframe>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
       <h2>Contact</h2>
-      <form action="#" method="POST">
+      <form action="https://formspree.io/f/mzbqlnnv" method="POST">
         <input type="text" name="name" placeholder="Name" required />
         <input type="email" name="email" placeholder="Email" required />
         <input type="text" name="phone" placeholder="Phone" />
