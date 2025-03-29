@@ -3,59 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Datafy - Soluciones de Análisis de Datos</title>
+  <title>Datafy - Soluciones en Análisis de Datos</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
     <div class="logo">
-      <img src="img/LOGO_DATAFY_1.jpg" alt="Datafy logo" />
-      <h1>Datafy</h1>
+      <img src="img/LOGO_DATAFY_1.jpg" alt="Logo Datafy" />
     </div>
-    <ul class="nav-menu">
-      <li><a href="#">Inicio</a></li>
-      <li class="dropdown">
-        <a href="#">Soluciones</a>
-        <ul class="dropdown-content">
-          <li><a href="#">Analytics</a></li>
-          <li><a href="#">Publicidad</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Precios</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-      <li><a class="language-toggle" href="index_en.html">English</a></li>
-    </ul>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#">Soluciones</a>
+          <ul class="dropdown-content">
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Advertising</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Precios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a class="language-toggle" href="index_en.html">English</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
     <section class="intro">
-      <h2>Consultoría en Análisis de Datos y Business Intelligence</h2>
-      <p>Impulsamos decisiones estratégicas a través del poder de los datos.</p>
+      <h1>Consultoría en Análisis de Datos & Business Intelligence</h1>
+      <p>Impulsamos decisiones inteligentes a través del análisis y la visualización de datos.</p>
     </section>
 
     <section class="report">
-      <h3>Ejemplo de Reporte Interactivo</h3>
-      <iframe title="Curso Compilado PBI" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZDYxZjFlNDUtZDVlOS00ZDY5LWE2ZTUtYjAzMDZjNzNkOGIwIiwidCI6IjAzZmMzOGQ5LTkzMWYtNDk1Yi04MGJhLWQxNGM1ZDVkMWYxZCIsImMiOjR9" allowFullScreen="true"></iframe>
+      <iframe title="Curso Compilado PBI" src="https://app.powerbi.com/view?r=eyJrIjoiZDYxZjFlNDUtZDVlOS00ZDY5LWE2ZTUtYjAzMDZjNzNkOGIwIiwidCI6IjAzZmMzOGQ5LTkzMWYtNDk1Yi04MGJhLWQxNGM1ZDVkMWYxZCIsImMiOjR9" allowFullScreen="true"></iframe>
     </section>
 
     <section class="contact" id="contacto">
-      <h3>Contacto</h3>
-    <form action="https://formsubmit.co/info@datafy.lat" method="POST">
-      <input type="text" name="nombre" placeholder="Nombre" required>
-      <input type="email" name="email" placeholder="Correo electrónico" required>
-      <input type="text" name="telefono" placeholder="Teléfono">
-      <input type="text" name="provincia" placeholder="Provincia">
-      <input type="text" name="pais" placeholder="País">
-      <textarea name="mensaje" placeholder="Escribí tu mensaje..." rows="5" required></textarea>
+      <h2>Contacto</h2>
+      <form action="https://formsubmit.co/info@datafy.lat" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <input type="text" name="telefono" placeholder="Teléfono">
+        <input type="text" name="provincia" placeholder="Provincia">
+        <input type="text" name="pais" placeholder="País">
+        <textarea name="mensaje" placeholder="Escribí tu mensaje..." rows="5" required></textarea>
 
-      <!-- Campos ocultos para redirección y anti-spam -->
-      <input type="hidden" name="_next" value="https://datafy.lat/gracias.html">
-      <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://datafy.lat/gracias.html">
+        <input type="hidden" name="_captcha" value="false">
 
-      <button type="submit">Enviar</button>
-    </form>
-
-      
+        <button type="submit">Enviar</button>
+      </form>
     </section>
   </main>
 
@@ -64,5 +61,3 @@
   </footer>
 </body>
 </html>
-
-
