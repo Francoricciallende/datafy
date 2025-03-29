@@ -3,122 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Datafy - Consultoría en Datos</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #0e0e0e;
-      color: #f5f5f5;
-    }
-    header {
-      background: #1a1a1a;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 2px solid #00ffff44;
-    }
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #00ffff;
-    }
-    nav a {
-      margin-left: 1rem;
-      color: #f5f5f5;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #00ffff;
-    }
-    .section {
-      padding: 4rem 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    .section h2 {
-      color: #00ffff;
-    }
-    .language-toggle {
-      background: none;
-      border: 1px solid #00ffff;
-      color: #00ffff;
-      padding: 0.3rem 0.8rem;
-      cursor: pointer;
-      border-radius: 4px;
-    }
-    footer {
-      background: #1a1a1a;
-      text-align: center;
-      padding: 2rem;
-      border-top: 2px solid #00ffff44;
-    }
-  </style>
+  <title>Datafy | Consultoría en Datos</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <div class="logo">Datafy</div>
+    <img src="LOGO DATAFY 4.jpg" alt="Logo Datafy" class="logo" />
     <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#sobre-mi">Sobre Nosotros</a>
-      <a href="#contacto">Contacto</a>
-      <button class="language-toggle" onclick="toggleLanguage()">EN</button>
+      <button id="langToggle">English</button>
     </nav>
   </header>
 
-  <section class="section" id="inicio">
-    <h2 data-es="Bienvenido a Datafy" data-en="Welcome to Datafy">Bienvenido a Datafy</h2>
-    <p data-es="Impulsamos decisiones estratégicas a través del análisis de datos." data-en="We drive strategic decisions through data analytics.">
-      Impulsamos decisiones estratégicas a través del análisis de datos.
-    </p>
-  </section>
+  <main>
+    <section class="intro">
+      <h1>Consultoría en Análisis de Datos y Business Intelligence</h1>
+      <p>Impulsamos tus decisiones con datos claros y visuales impactantes.</p>
+    </section>
 
-  <section class="section" id="servicios">
-    <h2 data-es="Servicios" data-en="Services">Servicios</h2>
-    <ul>
-      <li data-es="Análisis de datos empresariales" data-en="Business data analysis">Análisis de datos empresariales</li>
-      <li data-es="Visualización interactiva en Power BI" data-en="Interactive dashboards with Power BI">Visualización interactiva en Power BI</li>
-      <li data-es="Modelado de datos y automatización" data-en="Data modeling and automation">Modelado de datos y automatización</li>
-    </ul>
-  </section>
+    <section class="proyecto">
+      <h2>Ejemplo de Proyecto</h2>
+      <iframe title="Curso Compilado PBI" width="100%" height="400" src="https://app.powerbi.com/view?r=eyJrIjoiZDYxZjFlNDUtZDVlOS00ZDY5LWE2ZTUtYjAzMDZjNzNkOGIwIiwidCI6IjAzZmMzOGQ5LTkzMWYtNDk1Yi04MGJhLWQxNGM1ZDVkMWYxZCIsImMiOjR9" frameborder="0" allowfullscreen="true"></iframe>
+    </section>
 
-  <section class="section" id="proyectos">
-    <h2 data-es="Proyectos" data-en="Projects">Proyectos</h2>
-    <p data-es="Proximamente..." data-en="Coming soon...">Proximamente...</p>
-  </section>
+    <section class="contacto">
+      <h2>Contacto</h2>
+      <form action="mailto:info@datafy.lat" method="post" enctype="text/plain">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="Nombre" required />
 
-  <section class="section" id="sobre-mi">
-    <h2 data-es="Sobre Nosotros" data-en="About Us">Sobre Nosotros</h2>
-    <p data-es="Somos un equipo especializado en consultoría de datos y soluciones BI." data-en="We are a team specialized in data consulting and BI solutions.">
-      Somos un equipo especializado en consultoría de datos y soluciones BI.
-    </p>
-  </section>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Email" required />
 
-  <section class="section" id="contacto">
-    <h2 data-es="Contacto" data-en="Contact">Contacto</h2>
-    <p>Email: <a href="mailto:info@datafy.lat">info@datafy.lat</a></p>
-  </section>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="Telefono" />
+
+        <label for="provincia">Provincia:</label>
+        <input type="text" id="provincia" name="Provincia" />
+
+        <label for="pais">País:</label>
+        <input type="text" id="pais" name="Pais" />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="Mensaje"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Datafy - Todos los derechos reservados</p>
+    <p>&copy; 2025 Datafy. Todos los derechos reservados.</p>
   </footer>
 
   <script>
-    function toggleLanguage() {
-      const elements = document.querySelectorAll('[data-en]');
-      const currentLang = document.documentElement.lang;
-      const newLang = currentLang === 'es' ? 'en' : 'es';
-      document.documentElement.lang = newLang;
-      document.querySelector('.language-toggle').innerText = newLang === 'es' ? 'EN' : 'ES';
-
-      elements.forEach(el => {
-        el.textContent = el.getAttribute(`data-${newLang}`);
-      });
-    }
+    document.getElementById('langToggle').addEventListener('click', () => {
+      window.location.href = 'index-en.html';
+    });
   </script>
 </body>
 </html>
