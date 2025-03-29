@@ -1,67 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Datafy - Data & Business Intelligence Consulting</title>
+  <title>Datafy - Data Analytics Solutions</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
   <header>
     <div class="logo">
-      <img src="img/LOGO_DATAFY_1.jpg" alt="Datafy logo" />
-      <h1>Datafy</h1>
+      <img src="img/LOGO_DATAFY_1.jpg" alt="Datafy Logo" />
     </div>
     <nav>
       <ul class="nav-menu">
-        <li><a href="#home">Home</a></li>
+        <li><a href="#">Home</a></li>
         <li class="dropdown">
-          <a href="#solutions">Solutions</a>
+          <a href="#">Solutions</a>
           <ul class="dropdown-content">
-            <li><a href="#analytics">Analytics</a></li>
-            <li><a href="#advertising">Advertising</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Advertising</a></li>
           </ul>
         </li>
-        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#">Pricing</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a class="language-toggle" href="index.html">Español</a></li>
       </ul>
     </nav>
-    <div>
-      <a href="index.html" class="language-toggle">Español</a>
-    </div>
   </header>
 
   <main>
-    <section id="home" class="intro">
-      <h2>Welcome to Datafy</h2>
-      <p>We offer professional consulting services in data analysis and business intelligence. Our goal is to help you transform data into actionable insights that drive your business forward.</p>
+    <section class="intro">
+      <h1>Data Analytics & Business Intelligence Consulting</h1>
+      <p>We empower smart decisions through data analysis and visualization.</p>
     </section>
 
-    <section id="analytics" class="report">
-      <h2>Sample Power BI Report</h2>
-      <iframe title="Curso Compilado PBI" src="https://app.powerbi.com/view?r=eyJrIjoiZDYxZjFlNDUtZDVlOS00ZDY5LWE2ZTUtYjAzMDZjNzNkOGIwIiwidCI6IjAzZmMzOGQ5LTkzMWYtNDk1Yi04MGJhLWQxNGM1ZDVkMWYxZCIsImMiOjR9" allowFullScreen="true"></iframe>
+    <section class="report">
+      <iframe title="Power BI Report" src="https://app.powerbi.com/view?r=eyJrIjoiZDYxZjFlNDUtZDVlOS00ZDY5LWE2ZTUtYjAzMDZjNzNkOGIwIiwidCI6IjAzZmMzOGQ5LTkzMWYtNDk1Yi04MGJhLWQxNGM1ZDVkMWYxZCIsImMiOjR9" allowFullScreen="true"></iframe>
     </section>
 
-    <section id="contact" class="contact">
+    <section class="contact" id="contact">
       <h2>Contact</h2>
-      <form action="https://formspree.io/f/mzbqlnnv" method="POST">
-        <input type="text" name="name" placeholder="Name" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <input type="text" name="phone" placeholder="Phone" />
-        <input type="text" name="province" placeholder="Province" />
-        <input type="text" name="country" placeholder="Country" />
-        <textarea name="message" placeholder="Your message" required></textarea>
+      <form action="https://formsubmit.co/info@datafy.lat" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="phone" placeholder="Phone">
+        <input type="text" name="state" placeholder="State">
+        <input type="text" name="country" placeholder="Country">
+        <textarea name="message" placeholder="Write your message..." rows="5" required></textarea>
+
+        <input type="hidden" name="_next" value="https://datafy.lat/thankyou.html">
+        <input type="hidden" name="_captcha" value="false">
+
         <button type="submit">Send</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>Contact us: <a href="mailto:info@datafy.lat">info@datafy.lat</a></p>
     <p>&copy; 2025 Datafy. All rights reserved.</p>
   </footer>
 </body>
-
 </html>
