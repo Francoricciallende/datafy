@@ -1,72 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Datafy - Data Analytics & BI Consulting</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-  <header>
-    <div class="container header-container">
-      <img src="img/LOGO_DATAFY_1.jpg" alt="Datafy Logo" class="logo" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datafy - Data & Business Intelligence</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="img/LOGO_DATAFY_1.jpg" alt="Datafy Logo" class="logo" />
+        <h1>Datafy</h1>
+      </div>
       <nav>
-        <ul>
+        <ul class="menu">
           <li><a href="index-en.html">Home</a></li>
           <li class="dropdown">
             <a href="#">Solutions</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Analytics</a></li>
-              <li><a href="#">Advertising</a></li>
+            <ul class="submenu">
+              <li><a href="#analytics">Analytics</a></li>
+              <li><a href="#advertising">Advertising</a></li>
             </ul>
           </li>
-          <li><a href="#">Pricing</a></li>
+          <li><a href="#pricing">Pricing</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="index.html" class="lang-button">Español</a></li>
+          <li><a href="index.html" class="lang-btn">Español</a></li>
         </ul>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <main>
     <section class="hero">
-      <div class="container">
-        <h1>Turn your data into smart decisions</h1>
-        <p>Datafy helps you optimize strategies and discover opportunities through Business Intelligence and advanced analytics.</p>
-      </div>
+      <h2>Empowering your business through data.</h2>
+      <p>We offer customized solutions in analytics and business intelligence.</p>
     </section>
 
-    <section class="contact" id="contact">
-      <div class="container">
-        <h2>Contact us</h2>
-        <form action="https://formsubmit.co/info@datafy.lat" method="POST">
-          <input type="text" name="name" placeholder="Full Name" required />
-          <input type="email" name="email" placeholder="Email" required />
-          <input type="text" name="phone" placeholder="Phone" />
-          <input type="text" name="province" placeholder="Province" />
-          <input type="text" name="country" placeholder="Country" />
-          <textarea name="message" placeholder="Your message" rows="5" required></textarea>
-          <input type="hidden" name="_next" value="https://datafy.lat/gracias.html" />
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
+    <section id="analytics">
+      <h3>Analytics</h3>
+      <p>Get insights into your business performance and make data-driven decisions.</p>
+    </section>
+
+    <section id="advertising">
+      <h3>Advertising</h3>
+      <p>Boost your marketing campaigns by understanding your audience and measuring results.</p>
+    </section>
+
+    <section id="pricing">
+      <h3>Pricing</h3>
+      <p>Plans tailored to the size and needs of your business. Contact us to request a quote.</p>
+    </section>
+
+    <section id="contact">
+      <h3>Contact</h3>
+      <form action="https://formsubmit.co/info@datafy.lat" method="POST">
+        <input type="text" name="name" placeholder="Full name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="phone" placeholder="Phone number" />
+        <input type="text" name="province" placeholder="Province" />
+        <input type="text" name="country" placeholder="Country" />
+        <textarea name="message" placeholder="Message" required></textarea>
+        <input type="hidden" name="_next" value="https://datafy.lat/thanks-en.html" />
+        <button type="submit">Send</button>
+      </form>
     </section>
 
     <section class="report">
-      <div class="container">
-        <h2>Sample Project</h2>
-        <iframe title="Power BI Report" width="100%" height="400" src="https://app.powerbi.com/view?r=eyJrIjoiZDYxZjFlNDUtZDVlOS00ZDY5LWE2ZTUtYjAzMDZjNzNkOGIwIiwidCI6IjAzZmMzOGQ5LTkzMWYtNDk1Yi04MGJhLWQxNGM1ZDVkMWYxZCIsImMiOjR9" frameborder="0" allowfullscreen></iframe>
-      </div>
+      <h3>Example Report</h3>
+      <iframe title="Curso Compilado PBI" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZDYxZjFlNDUtZDVlOS00ZDY5LWE2ZTUtYjAzMDZjNzNkOGIwIiwidCI6IjAzZmMzOGQ5LTkzMWYtNDk1Yi04MGJhLWQxNGM1ZDVkMWYxZCIsImMiOjR9" frameborder="0" allowfullscreen="true"></iframe>
     </section>
-  </main>
 
-  <footer>
-    <div class="container">
+    <footer>
       <p>&copy; 2025 Datafy. All rights reserved.</p>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
