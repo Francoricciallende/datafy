@@ -158,27 +158,64 @@ footer .social-icons img {
     margin: 0 10px;
 }
 
-.contact form {
+/* Estilos del formulario */
+.contact-form {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #0A2647; /* Azul oscuro como color destacado */
+}
+
+.form-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.contact form input, .contact form textarea, .contact form button {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1em;
+.form-group {
+    text-align: left; /* Alineación izquierda para etiquetas y campos */
 }
 
-.contact form button {
-    background: #28a745;
-    color: #fff;
+.form-group label {
     font-weight: bold;
-    cursor: pointer;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #333333;
 }
 
-.contact form button:hover {
-    background: #218838;
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical; /* Permite ajustar la altura manualmente */
+}
+
+button[type="submit"] {
+    background: #2E8A99; /* Verde claro como botón principal */
+    color: #FFFFFF;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #144272; /* Azul claro como hover */
 }

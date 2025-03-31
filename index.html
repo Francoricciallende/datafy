@@ -37,21 +37,53 @@
       <iframe title="Curso Compilado PBI" width="100%" height="400" src="https://app.powerbi.com/view?r=eyJrIjoiZDYxZjFlNDUtZDVlOS00ZDY5LWE2ZTUtYjAzMDZjNzNkOGIwIiwidCI6IjAzZmMzOGQ5LTkzMWYtNDk1Yi04MGJhLWQxNGM1ZDVkMWYxZCIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
     </section>
 
-    <section class="contact-form" id="contacto">
+    <section class="contact-form fade-in" id="contacto">
       <h2>Contacto</h2>
-      <form action="https://formsubmit.co/info@datafy.lat" method="POST">
-      <input type="hidden" name="_next" value="https://datafy.lat/gracias.html">
-      <input type="hidden" name="_captcha" value="false">
-
-      <input type="text" name="nombre" placeholder="Nombre" required />
-      <input type="email" name="email" placeholder="Correo electrónico" required />
-      <input type="text" name="telefono" placeholder="Teléfono de contacto" />
-      <input type="text" name="provincia" placeholder="Provincia" />
-      <input type="text" name="pais" placeholder="País" />
-      <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
-      <button type="submit">Enviar mensaje</button>
-    </form>
-  </section>
+      <form action="https://formsubmit.co/info@datafy.lat" method="POST" class="form-container">
+        <!-- Configuraciones ocultas -->
+        <input type="hidden" name="_next" value="https://datafy.lat/gracias.html">
+        <input type="hidden" name="_captcha" value="false">
+    
+        <!-- Nombre -->
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+        </div>
+    
+        <!-- Correo electrónico -->
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required />
+        </div>
+    
+        <!-- Teléfono -->
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="text" id="telefono" name="telefono" placeholder="Tu teléfono" />
+        </div>
+    
+        <!-- Provincia -->
+        <div class="form-group">
+          <label for="provincia">Provincia</label>
+          <input type="text" id="provincia" name="provincia" placeholder="Tu provincia" />
+        </div>
+    
+        <!-- País -->
+        <div class="form-group">
+          <label for="pais">País</label>
+          <input type="text" id="pais" name="pais" placeholder="Tu país" />
+        </div>
+    
+        <!-- Mensaje -->
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" rows="5" required></textarea>
+        </div>
+    
+        <!-- Botón de envío -->
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
 
       </form>
     </section>
